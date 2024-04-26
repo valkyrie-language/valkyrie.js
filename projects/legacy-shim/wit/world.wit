@@ -1,0 +1,5 @@
+package valkyrie:legacy@0.2.1-draft;
+
+world imports {
+    import debug;
+}

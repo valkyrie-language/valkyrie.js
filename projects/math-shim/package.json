@@ -1,0 +1,21 @@
+{
+    "name": "@valkyrie-language/math-shim",
+    "version": "0.0.0",
+    "description": "Valkyrie language math library for js platform",
+    "license": "MIT",
+    "type": "module",
+    "main": "index.js",
+    "types": "index.d.ts",
+    "typings": "index.d.ts",
+    "publishConfig": {
+        "access": "public",
+        "registry": "https://registry.npmjs.org/"
+    },
+    "scripts": {
+        "build": "jco transpile wit -o . --name index",
+        "lint": "eslint 'interfaces/*.{js,ts,tsx}'"
+    },
+    "dependencies": {
+
+    }
+}
