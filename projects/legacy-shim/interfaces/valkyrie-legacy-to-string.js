@@ -1,53 +1,21 @@
 export const ValkyrieLegacyToString = {
-    writeBool: function(value) {
-        process.stdout.write(value);
+    boolToString: function (value) {
+        value.toString()
     },
     
-    writeU8: function(value) {
-        process.stdout.write(value);
+    u64ToString: function (value) {
+        value.toString()
     },
     
-    writeU16: function(value) {
-        process.stdout.write(value);
+    i64ToString: function (value) {
+        value.toString()
     },
     
-    writeU32: function(value) {
-        process.stdout.write(value);
+    f64ToString: function (value) {
+        value.toString()
     },
     
-    writeU64: function(value) {
-        process.stdout.write(value);
+    charToString: function (value) {
+        value.toString()
     },
-    
-    writeI8: function(value) {
-        process.stdout.write(value);
-    },
-    
-    writeI16: function(value) {
-        process.stdout.write(value);
-    },
-    
-    writeI32: function(value) {
-        process.stdout.write(value);
-    },
-    
-    writeI64: function(value) {
-        process.stdout.write(value.toString());
-    },
-    
-    writeF32: function(value) {
-        process.stdout.write(value);
-    },
-    
-    writeF64: function(value) {
-        process.stdout.write(value);
-    },
-    
-    writeChar: function(value) {
-        process.stdout.write(value.toString());
-    },
-    
-    writeString: function(value) {
-        process.stdout.write(value);
-    }
 };
