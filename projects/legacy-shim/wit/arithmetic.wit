@@ -1,0 +1,153 @@
+package valkyrie:legacy@0.2.0;
+
+interface arithmetic-f32 {
+    /// Raises a number to a floating point power.
+    pow: func(base: f32, exponent: f32) -> f32;
+
+    /// Returns the cube root of a number, more accurate than using pow function
+    cbrt: func(value: f64) -> f64;
+
+    /// Compute the distance between the origin and a point (x, y) on the Euclidean plane. Equivalently, compute the length of the hypotenuse of a right-angle triangle with other sides having length x.abs() and y.abs().
+    hypot: func(x: f32, y: f32) -> f32;
+
+    /// Returns the exponential e^value, more accurate than using pow function
+    exp: func(value: f64) -> f64;
+
+    /// Returns e^value - 1 in a way that is accurate even if the number is close to zero.
+    exp-m1: func(value: f32) -> f32;
+
+    /// Returns the logarithm of the number with respect to an arbitrary base.
+    log: func(base: f32, value: f32) -> f32;
+
+    /// Returns the natural logarithm of the number, more accurate than using log function
+    ln: func(value: f32) -> f32;
+
+    /// Returns ln(n+1) (natural logarithm) more accurately than if the operations were performed separately.
+    ln-p1: func(value: f32) -> f32;
+
+    /// Returns the base 2 logarithm of the number, more accurate than using log function
+    log2: func(value: f32) -> f32;
+
+    /// Returns the base 10 logarithm of the number, more accurate than using log function
+    log10: func(value: f32) -> f32;
+
+    /// Computes the cosine of a number (in radians).
+    cos: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic cosine of a number (in radians).
+    cosh: func(value: f32) -> f32;
+
+    /// Computes the sine of a number (in radians).
+    sin: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic of a number (in radians).
+    sinh: func(value: f32) -> f32;
+
+    /// Computes the tangent of a number (in radians).
+    tan: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic tangent of a number (in radians).
+    tanh: func(value: f32) -> f32;
+
+    /// Computes the arccosine of a number.
+    ///
+    /// Return value is in radians in the range [0, π] or NaN if the number is outside the range [-1, 1].
+    acos: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic cosine of a number
+    acosh: func(value: f32) -> f32;
+
+    /// Computes the arcsine of a number.
+    ///
+    /// Return value is in radians in the range [-π/2, π/2] or NaN if the number is outside the range [-1, 1].
+    asin: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic sine of a number
+    asinh: func(value: f64) -> f64;
+
+    /// Computes the arctangent of a number.
+    ///
+    /// Return value is in radians in the range [-π/2, π/2];
+    atan: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic tangent of a number
+    atanh: func(value: f32) -> f32;
+}
+
+interface arithmetic-f64 {
+    /// Raises a number to a floating point power.
+    pow: func(base: f32, exponent: f32) -> f32;
+
+    /// Returns the cube root of a number, more accurate than using pow function
+    cbrt: func(value: f64) -> f64;
+
+    /// Compute the distance between the origin and a point (x, y) on the Euclidean plane. Equivalently, compute the length of the hypotenuse of a right-angle triangle with other sides having length x.abs() and y.abs().
+    hypot: func(x: f32, y: f32) -> f32;
+
+    /// Returns the exponential e^value, more accurate than using pow function
+    exp: func(value: f64) -> f64;
+
+    /// Returns e^value - 1 in a way that is accurate even if the number is close to zero.
+    exp-m1: func(value: f32) -> f32;
+
+    /// Returns the logarithm of the number with respect to an arbitrary base.
+    log: func(base: f32, value: f32) -> f32;
+
+    /// Returns the natural logarithm of the number, more accurate than using log function
+    ln: func(value: f32) -> f32;
+
+    /// Returns ln(n+1) (natural logarithm) more accurately than if the operations were performed separately.
+    ln-p1: func(value: f32) -> f32;
+
+    /// Returns the base 2 logarithm of the number, more accurate than using log function
+    log2: func(value: f32) -> f32;
+
+    /// Returns the base 10 logarithm of the number, more accurate than using log function
+    log10: func(value: f32) -> f32;
+
+    /// Computes the cosine of a number (in radians).
+    cos: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic cosine of a number (in radians).
+    cosh: func(value: f32) -> f32;
+
+    /// Computes the sine of a number (in radians).
+    sin: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic of a number (in radians).
+    sinh: func(value: f32) -> f32;
+
+    /// Computes the tangent of a number (in radians).
+    tan: func(value: f32) -> f32;
+
+    /// Computes the hyperbolic tangent of a number (in radians).
+    tanh: func(value: f32) -> f32;
+
+    /// Computes the arccosine of a number.
+    ///
+    /// Return value is in radians in the range [0, π] or NaN if the number is outside the range [-1, 1].
+    acos: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic cosine of a number
+    acosh: func(value: f32) -> f32;
+
+    /// Computes the arcsine of a number.
+    ///
+    /// Return value is in radians in the range [-π/2, π/2] or NaN if the number is outside the range [-1, 1].
+    asin: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic sine of a number
+    asinh: func(value: f64) -> f64;
+
+    /// Computes the arctangent of a number.
+    ///
+    /// Return value is in radians in the range [-π/2, π/2];
+    atan: func(value: f32) -> f32;
+
+    /// Returns the inverse hyperbolic tangent of a number
+    atanh: func(value: f32) -> f32;
+}
+
+interface arithmetic-big-int {
+
+}

@@ -12,7 +12,7 @@
         "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-        "build": "jco transpile wit -o . --name index",
+        "build": "jco transpile wit --stub -o . --name index",
         "lint": "eslint 'interfaces/*.{js,ts,tsx}'"
     },
     "dependencies": {

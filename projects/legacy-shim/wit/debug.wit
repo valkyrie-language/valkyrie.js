@@ -1,18 +1,18 @@
-package valkyrie:legacy@0.2.1-draft;
+package valkyrie:legacy@0.2.0;
 
 interface to-string {
-    /// Convert boolean value to string
-    bool-to-string: func(value: bool): string;
+    // Convert boolean value to string
+     bool-to-string: func(value: bool) -> string;
 
-    /// Output unsigned 64-bit integer to console
-    u64-to-string: func(value: u64, radix: u32);
+    // Output unsigned 64-bit integer to console
+     u64-to-string: func(value: u64, radix: u32) -> string;
 
-    /// Output signed 64-bit integer to console
-    i64-to-string: func(value: s64);
+    // Output signed 64-bit integer to console
+     i64-to-string: func(value: s64) -> string;
 
-    /// Output 64-bit float to console
-    f64-to-string: func(value: f64);
+    // Output 64-bit float to console
+     f64-to-string: func(value: f64) -> string;
 
-    /// Output character to console
-    char-to-string: func(value: char);
+    // Output character to console
+    char-to-string: func(value: char) -> string;
 }

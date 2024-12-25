@@ -1,4 +1,4 @@
-export const ValkyrieLegacyDebug = {
+export const ValkyrieLegacyToString = {
     writeBool: function(value) {
         process.stdout.write(value);
     },

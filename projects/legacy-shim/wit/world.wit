@@ -1,5 +1,7 @@
-package valkyrie:legacy@0.2.1-draft;
+package valkyrie:legacy@0.2.0;
 
 world imports {
-    import debug;
+    import to-string;
+    import arithmetic-f32;
+    import arithmetic-f64;
 }

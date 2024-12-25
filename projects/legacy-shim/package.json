@@ -12,8 +12,9 @@
         "registry": "https://registry.npmjs.org/"
     },
     "scripts": {
-        "build": "jco transpile wit --stub -o . --name index",
-        "lint": "eslint 'interfaces/*.{js,ts,tsx}'"
+        "build": "jco types wit -o . --name index",
+        "lint": "eslint 'interfaces/*.{js,ts,tsx}'",
+        "prepublishOnly": "npm run build"
     },
     "dependencies": {
 
